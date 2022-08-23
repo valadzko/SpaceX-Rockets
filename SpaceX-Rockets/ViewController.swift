@@ -8,12 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view.
-  }
-
-
+    
+    var movies: [String] = ["bad-boys.jpeg","joker.jpeg","hollywood.jpeg"]
+    var frame = CGRect.zero
+       
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+ 
 }
-
