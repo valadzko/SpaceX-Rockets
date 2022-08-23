@@ -13,6 +13,7 @@
 		E99926A028B3BF5F00CD3CEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E999269E28B3BF5F00CD3CEA /* Main.storyboard */; };
 		E99926A228B3BF6100CD3CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99926A128B3BF6100CD3CEA /* Assets.xcassets */; };
 		E99926A528B3BF6100CD3CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99926A328B3BF6100CD3CEA /* LaunchScreen.storyboard */; };
+		E99926B328B4C09500CD3CEA /* spacex-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = E99926B228B4C09500CD3CEA /* spacex-photo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E99926A128B3BF6100CD3CEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E99926A428B3BF6100CD3CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E99926A628B3BF6100CD3CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99926B228B4C09500CD3CEA /* spacex-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spacex-photo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				E99926A128B3BF6100CD3CEA /* Assets.xcassets */,
 				E99926A328B3BF6100CD3CEA /* LaunchScreen.storyboard */,
 				E99926A628B3BF6100CD3CEA /* Info.plist */,
+				E99926B228B4C09500CD3CEA /* spacex-photo.png */,
 			);
 			path = "SpaceX-Rockets";
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			files = (
 				E99926A528B3BF6100CD3CEA /* LaunchScreen.storyboard in Resources */,
 				E99926A228B3BF6100CD3CEA /* Assets.xcassets in Resources */,
+				E99926B328B4C09500CD3CEA /* spacex-photo.png in Resources */,
 				E99926A028B3BF5F00CD3CEA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
