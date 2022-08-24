@@ -66,7 +66,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="371" height="180"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EdJ-AA-sM2" userLabel="horizontalView">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="800" height="180"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="580" height="180"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zQH-WC-gix">
                                                                                 <rect key="frame" x="0.0" y="22" width="585" height="136"/>
@@ -213,9 +213,9 @@
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" constant="800" id="5NG-ZZ-Fj0"/>
                                                                             <constraint firstItem="zQH-WC-gix" firstAttribute="leading" secondItem="EdJ-AA-sM2" secondAttribute="leading" id="73n-rT-URO"/>
                                                                             <constraint firstAttribute="height" constant="180" id="dOy-L7-QOu"/>
+                                                                            <constraint firstAttribute="width" constant="580" id="h9O-sy-ZKP"/>
                                                                             <constraint firstItem="zQH-WC-gix" firstAttribute="centerY" secondItem="EdJ-AA-sM2" secondAttribute="centerY" id="hQf-27-UXb"/>
                                                                         </constraints>
                                                                     </view>
@@ -238,6 +238,7 @@
                                                             <constraint firstAttribute="height" constant="180" id="LQ7-OL-L1M"/>
                                                             <constraint firstItem="w0Y-an-uOE" firstAttribute="leading" secondItem="cXa-7Z-HRT" secondAttribute="leading" id="M2m-Cq-sUg"/>
                                                             <constraint firstAttribute="bottom" secondItem="w0Y-an-uOE" secondAttribute="bottom" id="NVs-Yi-02L"/>
+                                                            <constraint firstItem="w0Y-an-uOE" firstAttribute="leading" secondItem="cXa-7Z-HRT" secondAttribute="leading" id="YaH-Um-K5t"/>
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iwZ-64-YXF" userLabel="2">
@@ -544,6 +545,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="J9B-ia-v9c"/>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="tFm-s4-Pta"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Opo-bX-g2E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SbP-qg-lOb"/>
