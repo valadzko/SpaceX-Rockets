@@ -19,6 +19,15 @@ class SettingsViewController: UIViewController {
         self.dismiss(animated: true)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNeedsStatusBarAppearanceUpdate()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
+    
     /*
     // MARK: - Navigation
 

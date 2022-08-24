@@ -9,13 +9,22 @@ import UIKit
 
 class RocketLaunchHistoryViewController: UIViewController {
     
-    
+    @IBOutlet weak var reverseRocketImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        reverseRocketImageView.transform = CGAffineTransform(scaleX: -1, y: -1)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNeedsStatusBarAppearanceUpdate()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
 
     /*
     // MARK: - Navigation
