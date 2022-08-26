@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--RocketVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpaceX_Rockets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RocketVC" customModule="SpaceX_Rockets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="371" height="1289"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,7 +557,21 @@
                     <navigationItem key="navigationItem" id="Y4j-1Z-36K"/>
                     <size key="freeformSize" width="371" height="1289"/>
                     <connections>
+                        <outlet property="burndownTime1Label" destination="2nZ-wS-L3t" id="Z8q-LX-kL3"/>
+                        <outlet property="burndownTime2Label" destination="YeQ-ZU-SzV" id="TDB-y6-Rgi"/>
+                        <outlet property="countryLabel" destination="dP6-9W-8t4" id="6Hj-rE-wE1"/>
+                        <outlet property="diameterLabel" destination="x5V-Y0-y0A" id="kuk-dP-tZE"/>
+                        <outlet property="engines1Label" destination="lfI-Y5-C7K" id="Qkf-ch-6XJ"/>
+                        <outlet property="engines2Label" destination="z75-PH-iYQ" id="Ede-0c-twp"/>
+                        <outlet property="firstLaunchDateLabel" destination="1JX-R2-mfa" id="iSq-68-EXr"/>
+                        <outlet property="fuelAmount1Label" destination="cbD-Ff-bDP" id="vf3-BY-QyO"/>
+                        <outlet property="fuelAmount2Label" destination="YK2-5C-D6d" id="Yx8-H6-yJH"/>
+                        <outlet property="heightLabel" destination="kbx-bF-ODg" id="cUa-Sj-Vac"/>
+                        <outlet property="launchCostLabel" destination="5vi-iY-E2U" id="dtT-eg-7F6"/>
+                        <outlet property="massLabel" destination="qkE-IN-pIg" id="bei-NH-Qot"/>
+                        <outlet property="payloadLabel" destination="10E-Mz-gh4" id="6gr-S2-EGb"/>
                         <outlet property="rockerInfoView" destination="Hcv-LQ-d78" id="HIg-K1-504"/>
+                        <outlet property="rocketNameLabel" destination="pWm-Wq-LGd" id="msP-Ax-rKs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -567,7 +581,7 @@
         <!--Falcon Heavy-->
         <scene sceneID="zKq-U5-r9g">
             <objects>
-                <viewController id="oe5-ed-KG1" customClass="RocketLaunchHistoryViewController" customModule="SpaceX_Rockets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oe5-ed-KG1" customClass="RocketLaunchHistoryVC" customModule="SpaceX_Rockets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mwJ-dg-9Nk">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -819,12 +833,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCZ-fm-GqO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2224.6153846153848" y="292.89099526066349"/>
+            <point key="canvasLocation" x="1662" y="301"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--SettingsVC-->
         <scene sceneID="06w-fy-uTS">
             <objects>
-                <viewController id="EWw-lN-EUc" customClass="SettingsViewController" customModule="SpaceX_Rockets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EWw-lN-EUc" customClass="SettingsVC" customModule="SpaceX_Rockets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zbi-v4-59W">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -967,7 +981,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBo-EZ-QEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2226" y="-441"/>
+            <point key="canvasLocation" x="1662" y="-343"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tpk-iL-npb">
@@ -990,7 +1004,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w98-oT-9KR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="51.5625"/>
+            <point key="canvasLocation" x="258" y="-20"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

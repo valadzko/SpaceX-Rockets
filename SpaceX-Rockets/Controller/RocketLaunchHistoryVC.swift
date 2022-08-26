@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.swift
+//  RocketLaunchHistoryVC.swift
 //  SpaceX-Rockets
 //
 //  Created by Pavel on 24.08.22.
@@ -7,18 +7,16 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
-
+class RocketLaunchHistoryVC: UIViewController {
+    
+    @IBOutlet weak var reverseRocketImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        reverseRocketImageView.transform = CGAffineTransform(scaleX: -1, y: -1)
     }
-    
-    @IBAction func closeButtonPressed(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true)
-    }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setNeedsStatusBarAppearanceUpdate()
@@ -27,7 +25,7 @@ class SettingsViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .lightContent
     }
-    
+
     /*
     // MARK: - Navigation
 
