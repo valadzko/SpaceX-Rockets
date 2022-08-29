@@ -58,7 +58,7 @@ class RocketVC: UIViewController, SettingsVCDelegate {
             updateViews(with: rocket)
         }
     }
-    
+        
     func smallDesignChangesForViews() {
         rockerInfoView.layer.cornerRadius = 40
         rockerInfoView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
