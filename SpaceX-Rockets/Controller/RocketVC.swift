@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RocketVC: UIViewController {
+class RocketVC: UIViewController, SettingsVCDelegate {
     @IBOutlet weak var rockerInfoView: UIView!
     
     // All the UI outlets
@@ -25,14 +25,23 @@ class RocketVC: UIViewController {
     @IBOutlet weak var burndownTime2Label: UILabel!
     // horizontal views info
     @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var heightMeasurementLabel: UILabel!
     @IBOutlet weak var diameterLabel: UILabel!
+    @IBOutlet weak var diameterMeasurementsLabel: UILabel!
     @IBOutlet weak var massLabel: UILabel!
+    @IBOutlet weak var massMeasurementsLabel: UILabel!
     @IBOutlet weak var payloadLabel: UILabel!
+    @IBOutlet weak var payloadMeasurementsLabel: UILabel!
     
-    lazy var rocket = Rocket.example()
+    //var rocket = Rocket.example()
+    lazy var rocket: Rocket? = nil
     
     @IBAction func settingButtonPressed(_ sender: UIButton) {
-        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
+        nextViewController.rocket = rocket
+        nextViewController.delegate = self
+        self.present(nextViewController, animated: true)
     }
     
     override func viewDidLoad() {
@@ -41,19 +50,29 @@ class RocketVC: UIViewController {
         
         // query data from API
         APIManager.GetRocket { rocket in
-            self.updateViews(with: rocket)
+            self.rocket = rocket
         }
-        //updateViews(with: rocket)
+        
+        if let rocket = rocket {
+            print("updated views from viewDidLoad")
+            updateViews(with: rocket)
+        }
     }
     
     func smallDesignChangesForViews() {
         rockerInfoView.layer.cornerRadius = 40
         rockerInfoView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
+        print("in viewDidAppear")
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+        if let rocket = rocket {
+            
+            self.updateViews(with: rocket)
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -70,7 +89,7 @@ class RocketVC: UIViewController {
         rocketNameLabel.text = rocket.name
         countryLabel.text = rocket.country
         //TODO: don't show decimal if round
-        launchCostLabel.text = "$\(rocket.costInMillions) млн"
+        launchCostLabel.text = "$\(rocket.launchCostMln) млн"
 
         // first stage
         if let firstStage = rocket.firstStage {
@@ -86,10 +105,14 @@ class RocketVC: UIViewController {
             burndownTime2Label.text = "\(secondStage.burnTimeSEC ?? 0)"
         }
         
-        massLabel.text = "\(rocket.mass.lb)"
-        diameterLabel.text = "\(rocket.diameter.feet)"
-        heightLabel.text = "\(rocket.height.feet)"
-         
-        payloadLabel.text = "\(rocket.totalPayloadLb)"
+        heightLabel.text = "\(rocket.height.value())"
+        diameterLabel.text = "\(rocket.diameter.value())"
+        massLabel.text = "\(rocket.mass.value())"
+        payloadLabel.text = "\(rocket.totalPayload)"
+        
+        heightMeasurementLabel.text = "Высота,\(rocket.height.measurementName())"
+        diameterMeasurementsLabel.text = "Диаметр,\(rocket.diameter.measurementName())"
+        massMeasurementsLabel.text = "Масса,\(rocket.mass.measurementName())"
+        payloadMeasurementsLabel.text = "Нагрузка,\(rocket.payloadWeights[0].measurementName())"
     }
 }

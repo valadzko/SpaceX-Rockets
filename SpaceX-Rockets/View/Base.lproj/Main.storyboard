@@ -54,7 +54,6 @@
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="settingButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jl3-WX-RdF"/>
-                                                                    <segue destination="EWw-lN-EUc" kind="presentation" id="sc0-7t-AR9"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -75,16 +74,16 @@
                                                                                         <rect key="frame" x="30" y="8" width="110" height="110"/>
                                                                                         <subviews>
                                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JkZ-N6-Uja">
-                                                                                                <rect key="frame" x="15.666666666666664" y="28.333333333333375" width="79" height="53.333333333333343"/>
+                                                                                                <rect key="frame" x="18" y="28.333333333333375" width="74.333333333333329" height="53.333333333333343"/>
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="229.6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbx-bF-ODg">
-                                                                                                        <rect key="frame" x="16.666666666666675" y="0.0" width="45.333333333333343" height="21.666666666666668"/>
+                                                                                                        <rect key="frame" x="14.333333333333332" y="0.0" width="45.333333333333343" height="21.666666666666668"/>
                                                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
-                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Высота, ft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6up-ea-XgW">
-                                                                                                        <rect key="frame" x="0.0" y="31.666666666666629" width="79" height="21.666666666666671"/>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Высота,ft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6up-ea-XgW">
+                                                                                                        <rect key="frame" x="0.0" y="31.666666666666629" width="74.333333333333329" height="21.666666666666671"/>
                                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                                         <color key="textColor" name="TextColor"/>
                                                                                                         <nil key="highlightedColor"/>
@@ -109,16 +108,16 @@
                                                                                         <rect key="frame" x="155" y="8" width="110" height="110"/>
                                                                                         <subviews>
                                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pgf-1a-Rzi">
-                                                                                                <rect key="frame" x="9.6666666666666572" y="28.333333333333375" width="90.666666666666671" height="53.333333333333343"/>
+                                                                                                <rect key="frame" x="12" y="28.333333333333375" width="86" height="53.333333333333343"/>
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="39.9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5V-Y0-y0A">
-                                                                                                        <rect key="frame" x="27.666666666666689" y="0.0" width="35.333333333333343" height="21.666666666666668"/>
+                                                                                                        <rect key="frame" x="25.333333333333346" y="0.0" width="35.333333333333343" height="21.666666666666668"/>
                                                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
-                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Диаметр, ft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xa-MF-tsD">
-                                                                                                        <rect key="frame" x="0.0" y="31.666666666666629" width="90.666666666666671" height="21.666666666666671"/>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Диаметр,ft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xa-MF-tsD">
+                                                                                                        <rect key="frame" x="0.0" y="31.666666666666629" width="86" height="21.666666666666671"/>
                                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                                         <color key="textColor" name="TextColor"/>
                                                                                                         <nil key="highlightedColor"/>
@@ -151,8 +150,8 @@
                                                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
-                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Масса, ft" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xi5-qw-S3M">
-                                                                                                        <rect key="frame" x="4" y="31.666666666666629" width="72" height="21.666666666666671"/>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Масса,lb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xi5-qw-S3M">
+                                                                                                        <rect key="frame" x="5" y="31.666666666666629" width="70" height="21.666666666666671"/>
                                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                                         <color key="textColor" name="TextColor"/>
                                                                                                         <nil key="highlightedColor"/>
@@ -177,16 +176,16 @@
                                                                                         <rect key="frame" x="405" y="8" width="110" height="110"/>
                                                                                         <subviews>
                                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RvP-MK-10r">
-                                                                                                <rect key="frame" x="6.6666666666666856" y="28.333333333333375" width="96.666666666666671" height="53.333333333333343"/>
+                                                                                                <rect key="frame" x="9" y="28.333333333333375" width="92.333333333333329" height="53.333333333333343"/>
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140,660" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10E-Mz-gh4">
-                                                                                                        <rect key="frame" x="15.666666666666629" y="0.0" width="65.333333333333329" height="21.666666666666668"/>
+                                                                                                        <rect key="frame" x="13.333333333333314" y="0.0" width="65.333333333333329" height="21.666666666666668"/>
                                                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
-                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нагрузка, lb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK3-WB-xBZ">
-                                                                                                        <rect key="frame" x="0.0" y="31.666666666666629" width="96.666666666666671" height="21.666666666666671"/>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нагрузка,lb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK3-WB-xBZ">
+                                                                                                        <rect key="frame" x="0.0" y="31.666666666666629" width="92.333333333333329" height="21.666666666666671"/>
                                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                                         <color key="textColor" name="TextColor"/>
                                                                                                         <nil key="highlightedColor"/>
@@ -561,15 +560,19 @@
                         <outlet property="burndownTime2Label" destination="YeQ-ZU-SzV" id="TDB-y6-Rgi"/>
                         <outlet property="countryLabel" destination="dP6-9W-8t4" id="6Hj-rE-wE1"/>
                         <outlet property="diameterLabel" destination="x5V-Y0-y0A" id="kuk-dP-tZE"/>
+                        <outlet property="diameterMeasurementsLabel" destination="0xa-MF-tsD" id="O7y-Zf-zga"/>
                         <outlet property="engines1Label" destination="lfI-Y5-C7K" id="Qkf-ch-6XJ"/>
                         <outlet property="engines2Label" destination="z75-PH-iYQ" id="Ede-0c-twp"/>
                         <outlet property="firstLaunchDateLabel" destination="1JX-R2-mfa" id="iSq-68-EXr"/>
                         <outlet property="fuelAmount1Label" destination="cbD-Ff-bDP" id="vf3-BY-QyO"/>
                         <outlet property="fuelAmount2Label" destination="YK2-5C-D6d" id="Yx8-H6-yJH"/>
                         <outlet property="heightLabel" destination="kbx-bF-ODg" id="cUa-Sj-Vac"/>
+                        <outlet property="heightMeasurementLabel" destination="6up-ea-XgW" id="lBJ-gB-4Xa"/>
                         <outlet property="launchCostLabel" destination="5vi-iY-E2U" id="dtT-eg-7F6"/>
                         <outlet property="massLabel" destination="qkE-IN-pIg" id="bei-NH-Qot"/>
+                        <outlet property="massMeasurementsLabel" destination="Xi5-qw-S3M" id="i4N-tT-4dI"/>
                         <outlet property="payloadLabel" destination="10E-Mz-gh4" id="6gr-S2-EGb"/>
+                        <outlet property="payloadMeasurementsLabel" destination="aK3-WB-xBZ" id="7xh-H9-aXv"/>
                         <outlet property="rockerInfoView" destination="Hcv-LQ-d78" id="HIg-K1-504"/>
                         <outlet property="rocketNameLabel" destination="pWm-Wq-LGd" id="msP-Ax-rKs"/>
                     </connections>
@@ -838,13 +841,13 @@
         <!--SettingsVC-->
         <scene sceneID="06w-fy-uTS">
             <objects>
-                <viewController id="EWw-lN-EUc" customClass="SettingsVC" customModule="SpaceX_Rockets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsVC" id="EWw-lN-EUc" customClass="SettingsVC" customModule="SpaceX_Rockets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zbi-v4-59W">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjO-Yi-SsJ">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
                                 <color key="barTintColor" name="SettingsBackground"/>
                                 <textAttributes key="titleTextAttributes">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -862,7 +865,7 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kB4-NO-aOx">
-                                <rect key="frame" x="25" y="106" width="340" height="240"/>
+                                <rect key="frame" x="25" y="94" width="340" height="240"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qpP-9l-AjW" userLabel="1">
                                         <rect key="frame" x="0.0" y="0.0" width="340" height="45"/>
@@ -883,6 +886,9 @@
                                                     <segment title="m"/>
                                                     <segment title="ft"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="toggleMetricSystem:" destination="EWw-lN-EUc" eventType="valueChanged" id="U2R-zO-F9I"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                         <constraints>
@@ -908,6 +914,9 @@
                                                     <segment title="m"/>
                                                     <segment title="ft"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="toggleMetricSystem:" destination="EWw-lN-EUc" eventType="valueChanged" id="8JG-hO-rcA"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                         <constraints>
@@ -933,6 +942,9 @@
                                                     <segment title="kg"/>
                                                     <segment title="lb"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="toggleMetricSystem:" destination="EWw-lN-EUc" eventType="valueChanged" id="Igf-NE-GPn"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                         <constraints>
@@ -958,6 +970,9 @@
                                                     <segment title="kg"/>
                                                     <segment title="lb"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="toggleMetricSystem:" destination="EWw-lN-EUc" eventType="valueChanged" id="woZ-A5-mFb"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                         <constraints>
@@ -978,6 +993,12 @@
                             <constraint firstItem="0HY-8O-3ET" firstAttribute="trailing" secondItem="kB4-NO-aOx" secondAttribute="trailing" constant="25" id="fEi-Zl-7ma"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="diameterSwitch" destination="9df-K0-tah" id="Jzc-zS-Hyy"/>
+                        <outlet property="heightSwitch" destination="bkb-JT-lBn" id="44H-nh-fo9"/>
+                        <outlet property="massSwitch" destination="ZA5-G1-6BM" id="a4D-UL-Uh7"/>
+                        <outlet property="payloadSwitch" destination="Myy-Wq-kd7" id="5JJ-6K-EsA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBo-EZ-QEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

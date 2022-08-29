@@ -7,24 +7,24 @@
 
 import Foundation
 
-struct Rocket: Codable {
-    let height, diameter: Length
-    let mass: Weight
+class Rocket: Codable {
+    var height, diameter: Length
+    var mass: Weight
     let firstStage: Stage?
     let secondStage: Stage?
-    let payloadWeights: [Weight]
+    var payloadWeights: [Weight]
     let images: [String]
     let name: String
     let costPerLaunch: Int
     let firstFlight, country, company: String
     let id: String
 
-    var costInMillions: Double {
+    var launchCostMln: Double {
         round((Double(costPerLaunch) / 1_000_000.00) * 100) / 100.0
     }
     
-    var totalPayloadLb: Int {
-        payloadWeights.reduce(0) { x, y in x + y.lb }
+    var totalPayload: Int {
+        payloadWeights.reduce(0) { x, y in x + y.value() }
     }
     
     enum CodingKeys: String, CodingKey {
@@ -41,7 +41,6 @@ struct Rocket: Codable {
     }
 }
 
-// MARK: - Stage
 struct Stage: Codable {
     let engines: Int
     let burnTimeSEC: Int?
@@ -54,14 +53,60 @@ struct Stage: Codable {
     }
 }
 
-// MARK: - Length
-struct Length: Codable {
+class Length: Codable, MetricOrImperialSystem {
     let meters, feet: Double
+    var isMetricSystem: Bool = false
+
+    func value() -> Double {
+        metricSystem() ? meters : feet
+    }
+    
+    func metricSystem() -> Bool {
+        return isMetricSystem
+    }
+
+    func measurementName() -> String {
+        metricSystem() ? "m" : "ft"
+    }
+    
+    func toggleSystem() {
+        isMetricSystem.toggle()
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case meters, feet
+    }
 }
 
-// MARK: - Weight
-struct Weight: Codable {
+class Weight: Codable, MetricOrImperialSystem {
     let kg, lb: Int
+    var isMetricSystem: Bool = false
+    
+    func value() -> Int {
+        metricSystem() ? kg : lb
+    }
+    
+    func metricSystem() -> Bool {
+        return isMetricSystem
+    }
+    
+    func measurementName() -> String {
+        metricSystem() ? "kg" : "lb"
+    }
+    
+    func toggleSystem() {
+        isMetricSystem.toggle()
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case kg, lb
+    }
+}
+
+protocol MetricOrImperialSystem {
+    func metricSystem() -> Bool
+    func measurementName() -> String
+    func toggleSystem()
 }
 
 extension Rocket {
